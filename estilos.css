@@ -1,0 +1,204 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: darkslategrey;
+    margin: 0px;
+    padding: 0px;
+    background-color: #161C21;
+    box-sizing: border-box;
+}
+
+.intro{
+    margin: 0;
+    min-height: 95vh;
+    background-image: url(Imagenes/work-1699510.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.intro::before {
+    content: "";
+    width: 100%;
+    min-height: 95vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(45deg, blue, orange);
+    opacity: 0.5;
+
+}
+
+.textointro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    color: white;
+    font-size: 40px;
+    text-shadow: 5px 5px 10px black;
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+
+.subintro{
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -250px;
+    margin-left: -5px;
+    left: 25%;
+
+}
+
+.flecha{
+    height: 50px;
+    margin-top: 35px;
+}
+
+div.noticia {
+    width: 80%;
+    height: 500px auto;
+    margin: 50px auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px -7px;
+    border-radius: 5px;
+    color: rgb(80, 80, 80);
+    padding: 30px;
+    overflow: hidden;
+  }
+  
+  div.noticia img.izquierda {
+    float: left;
+    margin-right: 50px;
+  }
+
+  .texto{
+    padding: 6%;
+  }
+
+.boxContainer{
+  
+  display: flex;
+  overflow: hidden;
+  float: left;
+  margin-left: 20px;
+}
+
+.card{
+    width: 320px auto;
+    height: 320px auto;
+    display: grid;
+    grid-template-rows: minmax(100%, 1fr);
+    grid-template-areas: "stack";
+    overflow: hidden;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.card img, .card figcaption{
+    grid-area: stack;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.card figcaption{
+    background-color: rgb(168, 168, 168);
+    opacity: 90%;
+    transform: translateY(calc(100% - 5rem));
+    transition: transform 0.6s;
+    color: #fff;
+    text-align: center;
+}
+
+.card figcaption h3{
+    height: 2rem;
+    font-size: 1.5rem;
+}
+
+.card:hover figcaption{
+    transform: none
+}
+
+
+
+.pie{
+    background-color: azure;
+    width: 100%;
+
+}
+
+
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    resize: vertical;
+  }
+  
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+  
+input[type=submit] {
+    background-color: #0073d1;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    float: right;
+}
+  
+input[type=enviar]:hover {
+    background-color: #9e9e9e;
+}
+  
+.container {
+    margin-top: 100vh;
+    border-radius: 50px;
+    background-color: 161C21;
+    padding: 10px;
+}
+  
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+.col-75 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.row{
+    margin-right: 60px;
+}
+  
+
+.flechaup{
+    height: 50px;
+    margin-top: 50px;
+    float: right;
+    margin-right: 50px;
+}
